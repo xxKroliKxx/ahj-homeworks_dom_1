@@ -1,0 +1,27 @@
+.board-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+}
+
+.cell {
+    width: 128px;
+    height: 128px;
+    border: 1px antiquewhite solid;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.cell__active {
+    background-image: url('../img/goblin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
